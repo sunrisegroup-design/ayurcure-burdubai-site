@@ -6,7 +6,11 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
   Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'
 
-/assets/*
+/photos/*
+  Cache-Control: public, max-age=2592000
+/posters/*
+  Cache-Control: public, max-age=2592000
+/branding/*
   Cache-Control: public, max-age=2592000
 
 /*.css
