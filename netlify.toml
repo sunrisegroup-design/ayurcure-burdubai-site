@@ -1,0 +1,5 @@
+[build]
+  publish = "."
+
+# Security headers and caching are defined in the _headers file (same syntax works on Netlify).
+# Netlify serves about.html at /about by default ("pretty URLs"), matching the canonical tags and sitemap.
