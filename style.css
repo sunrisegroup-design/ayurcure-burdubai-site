@@ -60,6 +60,17 @@
 @media(max-width:1050px){.legacy-insurance-grid{gap:12px}.legacy-info-card{padding:20px 15px;gap:12px}.legacy-number{font-size:48px}.legacy-symbol{font-size:34px;min-width:38px}}
 @media(max-width:760px){.legacy-insurance-grid{grid-template-columns:1fr;gap:12px}.legacy-info-card{min-height:125px;padding:22px}.legacy-info-card h2{font-size:23px}.legacy-number{font-size:60px}.legacy-symbol{font-size:42px;min-width:60px}}
 
+.tile img.faceimg{object-position:50% 14%;background:#fff}
+.tile img.seemaimg{object-position:50% 30%;background:#e9efe7}
+.profile{display:grid;grid-template-columns:240px minmax(0,1fr);align-items:center;background:#fff;border:1px solid #e6e8dc;border-radius:18px;overflow:hidden;box-shadow:0 18px 44px #123e301f;margin-top:18px}
+.profilephoto{margin:0;background:#fff;padding:26px 0 26px 26px}
+.profilephoto img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%;border-radius:12px}
+.profiletext{padding:44px 52px;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.profiletext h3{font-size:clamp(26px,2.7vw,36px);font-weight:500;margin:8px 0 14px;color:var(--deep)}
+.profiletext p{margin:0 0 12px;font-size:16px}
+@media(max-width:850px){.profile{grid-template-columns:1fr}.profilephoto{max-width:240px;width:100%;margin:0 auto;padding:26px 0 0}.profiletext{padding:20px 26px 30px}}
+@media(max-width:540px){.profile{border-radius:16px}.profilephoto{max-width:210px}.profiletext{padding:18px 20px 26px}}
+
 /* ===== Launch update: accessibility, video, mobile bar, gallery, legal ===== */
 .skip{position:absolute;left:-9999px;top:0;background:#123e30;color:#fff;padding:12px 18px;z-index:60;border-radius:0 0 8px 0;font-weight:700}
 .skip:focus{left:0}
