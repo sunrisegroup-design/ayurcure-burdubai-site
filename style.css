@@ -108,10 +108,21 @@
 /* mobile quick-contact bar */
 .mbar{display:none}
 @media(max-width:850px){
- .mbar{display:grid;grid-template-columns:repeat(3,1fr);position:fixed;left:0;right:0;bottom:0;z-index:22;background:#123e30;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -4px 16px #0003}
+ .mbar{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;left:0;right:0;bottom:0;z-index:22;background:#123e30;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -4px 16px #0003}
  .mbar a{color:#fff;text-align:center;padding:15px 4px;font-weight:700;font-size:14px;border-right:1px solid #ffffff2b}
  .mbar a:last-child{border-right:0}.mbar a:nth-child(2){background:#137a45}
- .floatwa{display:none}
+ .floatwa,.floatig{display:none}
+ .mbar a:nth-child(3){background:linear-gradient(45deg,#f09433,#dc2743 55%,#bc1888)}
  body{padding-bottom:calc(52px + env(safe-area-inset-bottom))}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.btn:hover{transform:none}}
+
+/* Instagram button */
+.igbtn{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;color:#fff;background:linear-gradient(45deg,#f09433,#dc2743 55%,#bc1888);box-shadow:0 8px 18px #163f2c1f;flex-shrink:0;transition:transform .2s}
+.igbtn:hover{transform:translateY(-2px)}
+.igbtn svg,.floatig svg{width:22px;height:22px;display:block}
+.floatig{position:fixed;right:22px;bottom:86px;width:53px;height:53px;border-radius:50%;display:grid;place-items:center;color:#fff;background:linear-gradient(45deg,#f09433,#dc2743 55%,#bc1888);box-shadow:0 6px 20px #0004;z-index:21}
+.floatig svg{width:26px;height:26px}
+@media(prefers-reduced-motion:reduce){.igbtn:hover{transform:none}}
+@media(max-width:1120px){.igbtn.desktop{display:none}}
+@media(max-width:850px){.floatig{display:none}}
