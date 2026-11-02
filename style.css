@@ -62,6 +62,7 @@
 
 .tile img.faceimg{object-position:50% 14%;background:#fff}
 .tile img.seemaimg{object-position:50% 30%;background:#e9efe7}
+.meghaprofile{padding-top:0}
 .profile{display:grid;grid-template-columns:240px minmax(0,1fr);align-items:center;background:#fff;border:1px solid #e6e8dc;border-radius:18px;overflow:hidden;box-shadow:0 18px 44px #123e301f;margin-top:18px}
 .profilephoto{margin:0;background:#fff;padding:26px 0 26px 26px}
 .profilephoto img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%;border-radius:12px}
